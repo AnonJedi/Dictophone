@@ -26,7 +26,8 @@
         android:layout_marginTop="233dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20px" />
+        android:layout_marginBottom="20px"
+        android:textSize="10pt" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -41,12 +42,13 @@
         android:layout_below="@+id/username"
         android:layout_centerHorizontal="true"
         android:background="@drawable/text_box"
-        android:padding="15px" />
+        android:padding="15px"
+        android:textSize="10pt" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/login"
+        android:text="OK"
         android:id="@+id/loginButton"
         android:background="@drawable/custom_button"
         android:paddingLeft="40px"
@@ -55,7 +57,9 @@
         android:paddingBottom="20px"
         android:layout_below="@+id/password"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30px" />
+        android:layout_marginTop="30px"
+        android:focusable="true"
+        android:textSize="10pt" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -72,4 +76,39 @@
         android:layout_centerHorizontal="true"
         android:background="@drawable/error_layout"
         android:padding="20px" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:max="1"
+        android:layout_below="@+id/errorText"
+        android:layout_alignLeft="@+id/loginButton"
+        android:layout_alignStart="@+id/loginButton"
+        android:layout_marginTop="69dp"
+        android:layout_alignRight="@+id/loginButton"
+        android:layout_alignEnd="@+id/loginButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:id="@+id/textView"
+        android:textColor="#FFFFE100"
+        android:textSize="10pt"
+        android:layout_alignBottom="@+id/seekBar"
+        android:layout_alignLeft="@+id/errorText"
+        android:layout_alignStart="@+id/errorText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:id="@+id/textView2"
+        android:textSize="10pt"
+        android:textColor="#FFFFE100"
+        android:layout_alignBottom="@+id/seekBar"
+        android:layout_alignRight="@+id/username"
+        android:layout_alignEnd="@+id/username" />
+
 </RelativeLayout>

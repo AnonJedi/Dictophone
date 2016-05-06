@@ -7,6 +7,8 @@ import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.SeekBar;
+import android.widget.Switch;
 import android.widget.TextView;
 
 public class MainActivity extends Activity implements View.OnClickListener {
@@ -14,6 +16,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     EditText password;
     TextView error;
     Button login;
+    SeekBar bar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +27,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         username = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);
         error = (TextView) findViewById(R.id.errorText);
+        bar = (SeekBar) findViewById(R.id.seekBar);
     }
 
     @Override
