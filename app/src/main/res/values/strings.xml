@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Dictophone</string>
+    <string name="login">login</string>
+    <string name="password">password</string>
+    <string name="name">name</string>
+    <string name="dictophone">dictophone</string>
 </resources>
